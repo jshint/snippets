@@ -1,0 +1,15 @@
+application: jshint-site
+version: 7
+runtime: go
+api_version: go1
+
+handlers:
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
+
+- url: /media
+  static_dir: media
+
+- url: /.*
+  script: _go_app
